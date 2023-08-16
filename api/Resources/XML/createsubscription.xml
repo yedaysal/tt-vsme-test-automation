@@ -1,0 +1,21 @@
+<soapenv:Envelope
+	xmlns:soapenv="CHANGEME"
+	xmlns:ser="CHANGEME">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ser:createSubscription>
+			<transactionId>1</transactionId>
+			<subscription>
+				<msisdn>CHANGEME</msisdn>
+				<networkProfileId>CHANGEME</networkProfileId>
+				<assignmentType>4</assignmentType>
+				<assignmentValue>1</assignmentValue>
+				<recurrenceCount>999</recurrenceCount>
+				<assignmentDate>2022-06-20T00:00:00.265Z</assignmentDate>
+				<startDate>2022-06-20T00:00:00.265Z</startDate>
+				<subscriptionId>CHANGEME</subscriptionId>
+			</subscription>
+			<channelCode>CHANGEME</channelCode>
+		</ser:createSubscription>
+	</soapenv:Body>
+</soapenv:Envelope>

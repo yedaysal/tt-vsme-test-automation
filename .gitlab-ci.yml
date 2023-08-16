@@ -1,0 +1,20 @@
+# ESR with rosetta
+
+stages:
+  - test_automation         # ESR Test Automation Stage
+ 
+test_automation:
+  stage: test_automation
+  script:
+    - pwd                              # /home/gitlab-runner/builds/fKjNSuud/0/yunus.emre.daysal/ttvsmetestautomation
+    - ls -l
+    - whoami                           # gitlab-runner
+    - tar czvf $GLOBAL_PROJECT.tar.gz api/ gui/
+    - chmod +x ./esr_scripts/*
+    - ls -l ./esr_scripts
+    - ./esr_scripts/esr_upload_project.sh $GLOBAL_PROJECT  $GLOBAL_HOST $PROJECT_ID  $GLOBAL_USER $GLOBAL_PASSWORD
+    - ./esr_scripts/esr_trigger_project_execution.sh
+    - sleep 60
+    - ./esr_scripts/esr_download_execution_report.sh
+  tags:
+    - ttvsme-test-automation

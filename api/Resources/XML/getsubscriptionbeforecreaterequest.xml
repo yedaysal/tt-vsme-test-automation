@@ -1,0 +1,12 @@
+<soapenv:Envelope
+	xmlns:soapenv="CHANGEME"
+	xmlns:ser="CHANGEME">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ser:getSubscription>
+			<transactionId>1</transactionId>
+			<subscriptionId>CHANGEME</subscriptionId>
+			<channelCode>1</channelCode>
+		</ser:getSubscription>
+	</soapenv:Body>
+</soapenv:Envelope>

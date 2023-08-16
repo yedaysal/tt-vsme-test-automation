@@ -1,0 +1,13 @@
+<soapenv:Envelope
+	xmlns:soapenv="CHANGEME"
+	xmlns:ser="CHANGEME">
+	<soapenv:Header/>
+	<soapenv:Body>
+		<ser:updateSubscriptionStatus>
+			<transactionId>1</transactionId>
+			<subscriptionId>CHANGEME</subscriptionId>
+			<status>TERMINATED</status>
+			<channelCode>1</channelCode>
+		</ser:updateSubscriptionStatus>
+	</soapenv:Body>
+</soapenv:Envelope>
